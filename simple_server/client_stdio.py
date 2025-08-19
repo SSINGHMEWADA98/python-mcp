@@ -19,7 +19,7 @@ async def main():
             for tool in tools_result.tools:
                 print(f"  - {tool.name}: {tool.description}")
 
-            result = await session.call_tool("add",3,5)
+            result = await session.call_tool("add", arguments={"a": 2, "b": 3})
             print("result",result.content[0].text)
 
 if __name__ =="__main__":
