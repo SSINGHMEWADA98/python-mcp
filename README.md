@@ -1,2 +1,12 @@
 # python-mcp
 Learning by code
+
+# MCP Architecture Overview
+The Model Context Protocol follows a client-host-server architecture: This separation of concerns allows for modular, composable systems where each server can focus on a specific domain (like file access, web search, or database operations).
+
+MCP Hosts: Programs like Claude Desktop, IDEs, or your python application that want to access data through MCP
+MCP Clients: Protocol clients that maintain 1:1 connections with servers
+MCP Servers: Lightweight programs that each expose specific capabilities through the standardized Model Context Protocol (tools, resources, prompts)
+Local Data Sources: Your computer's files, databases, and services that MCP servers can securely access
+Remote Services: External systems available over the internet (e.g., through APIs) that MCP servers can connect to
+This separation of concerns allows for modular, composable systems where each server can focus on a specific domain (like file access, web search, or database operations).
