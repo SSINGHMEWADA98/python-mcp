@@ -11,3 +11,4 @@ Local Data Sources: Your computer's files, databases, and services that MCP serv
 Remote Services: External systems available over the internet (e.g., through APIs) that MCP servers can connect to
 This separation of concerns allows for modular, composable systems where each server can focus on a specific domain (like file access, web search, or database operations).
 
+to be deleted
