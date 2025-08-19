@@ -11,25 +11,3 @@ Local Data Sources: Your computer's files, databases, and services that MCP serv
 Remote Services: External systems available over the internet (e.g., through APIs) that MCP servers can connect to
 This separation of concerns allows for modular, composable systems where each server can focus on a specific domain (like file access, web search, or database operations).
 
----
-config:
-  theme: neutral
-  look: classic
-  layout: dagre
----
-flowchart LR
- subgraph Computer["Your Computer"]
-        Client["Host with MCP Client<br>(Claude, IDEs, Tools)"]
-        ServerA["MCP Server A"]
-        ServerB["MCP Server B"]
-        ServerC["MCP Server C"]
-        DataA[("Local<br>Data Source A")]
-        DataB[("Local<br>Data Source B")]
-  end
- subgraph Internet["Internet"]
-        RemoteC[("Remote<br>Service C")]
-  end
-    Client -- MCP Protocol --> ServerA & ServerB & ServerC
-    ServerA <--> DataA
-    ServerB <--> DataB
-    ServerC -- Web APIs --> RemoteC
