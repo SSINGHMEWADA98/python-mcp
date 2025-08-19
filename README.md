@@ -1,0 +1,2 @@
+# python-mcp
+self learning
