@@ -31,7 +31,7 @@ Uses HTTP for client-to-server communication and SSE for server-to-client
 Suitable for remote connections across networks
 Allows for distributed architectures
 
-# Streamable HTTP (Introduced March 24, 2025):
+# Streamable HTTP:
 Modern HTTP-based streaming transport that supersedes SSE
 Uses a unified endpoint for bidirectional communication
 Recommended for production deployments due to better performance and scalability
@@ -43,4 +43,6 @@ Use SSE for development or when working with older MCP implementations
 Use Streamable HTTP for production deployments where you need the best performance and scalability
 
 ![alt text](image.png)
+
+
 
